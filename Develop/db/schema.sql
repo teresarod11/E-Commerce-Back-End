@@ -16,8 +16,8 @@ CREATE TABLE Product (
     product_name VARCHAR(30) NOT NULL,
     price DECIMAL NOT NULL,
     stock INT NOT NULL DEFAULT 10,
-    catergory_id INT,
-    FOREIGN KEY (catergory_id)
+    category_id INT,
+    FOREIGN KEY (category_id)
     REFERENCES Category(id)
     ON DELETE SET NULL
 );
